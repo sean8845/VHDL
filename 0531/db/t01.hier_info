@@ -1,0 +1,135 @@
+|t01
+button[0] => process_0.IN0
+button[1] => SR:SR1.R
+button[2] => SR:SR1.S
+sw => process_0.IN1
+sw => SR:SR1.En
+led <= SR:SR1.Q
+seg0[0] <= seg:segA.seg[0]
+seg0[1] <= seg:segA.seg[1]
+seg0[2] <= seg:segA.seg[2]
+seg0[3] <= seg:segA.seg[3]
+seg0[4] <= seg:segA.seg[4]
+seg0[5] <= seg:segA.seg[5]
+seg0[6] <= seg:segA.seg[6]
+seg0[7] <= seg:segA.seg[7]
+seg1[0] <= seg:segB.seg[0]
+seg1[1] <= seg:segB.seg[1]
+seg1[2] <= seg:segB.seg[2]
+seg1[3] <= seg:segB.seg[3]
+seg1[4] <= seg:segB.seg[4]
+seg1[5] <= seg:segB.seg[5]
+seg1[6] <= seg:segB.seg[6]
+seg1[7] <= seg:segB.seg[7]
+
+
+|t01|SR:SR1
+S => Q_buf.IN0
+R => Qn.IN0
+En => Q_buf.IN1
+En => Qn.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|t01|seg:segA
+BCD[0] => Equal0.IN7
+BCD[0] => Equal1.IN7
+BCD[0] => Equal2.IN7
+BCD[0] => Equal3.IN7
+BCD[0] => Equal4.IN7
+BCD[0] => Equal5.IN7
+BCD[0] => Equal6.IN7
+BCD[0] => Equal7.IN7
+BCD[0] => Equal8.IN7
+BCD[0] => Equal9.IN7
+BCD[1] => Equal0.IN6
+BCD[1] => Equal1.IN6
+BCD[1] => Equal2.IN6
+BCD[1] => Equal3.IN6
+BCD[1] => Equal4.IN6
+BCD[1] => Equal5.IN6
+BCD[1] => Equal6.IN6
+BCD[1] => Equal7.IN6
+BCD[1] => Equal8.IN6
+BCD[1] => Equal9.IN6
+BCD[2] => Equal0.IN5
+BCD[2] => Equal1.IN5
+BCD[2] => Equal2.IN5
+BCD[2] => Equal3.IN5
+BCD[2] => Equal4.IN5
+BCD[2] => Equal5.IN5
+BCD[2] => Equal6.IN5
+BCD[2] => Equal7.IN5
+BCD[2] => Equal8.IN5
+BCD[2] => Equal9.IN5
+BCD[3] => Equal0.IN4
+BCD[3] => Equal1.IN4
+BCD[3] => Equal2.IN4
+BCD[3] => Equal3.IN4
+BCD[3] => Equal4.IN4
+BCD[3] => Equal5.IN4
+BCD[3] => Equal6.IN4
+BCD[3] => Equal7.IN4
+BCD[3] => Equal8.IN4
+BCD[3] => Equal9.IN4
+seg[0] <= <VCC>
+seg[1] <= seg[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[7] <= seg[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|t01|seg:segB
+BCD[0] => Equal0.IN7
+BCD[0] => Equal1.IN7
+BCD[0] => Equal2.IN7
+BCD[0] => Equal3.IN7
+BCD[0] => Equal4.IN7
+BCD[0] => Equal5.IN7
+BCD[0] => Equal6.IN7
+BCD[0] => Equal7.IN7
+BCD[0] => Equal8.IN7
+BCD[0] => Equal9.IN7
+BCD[1] => Equal0.IN6
+BCD[1] => Equal1.IN6
+BCD[1] => Equal2.IN6
+BCD[1] => Equal3.IN6
+BCD[1] => Equal4.IN6
+BCD[1] => Equal5.IN6
+BCD[1] => Equal6.IN6
+BCD[1] => Equal7.IN6
+BCD[1] => Equal8.IN6
+BCD[1] => Equal9.IN6
+BCD[2] => Equal0.IN5
+BCD[2] => Equal1.IN5
+BCD[2] => Equal2.IN5
+BCD[2] => Equal3.IN5
+BCD[2] => Equal4.IN5
+BCD[2] => Equal5.IN5
+BCD[2] => Equal6.IN5
+BCD[2] => Equal7.IN5
+BCD[2] => Equal8.IN5
+BCD[2] => Equal9.IN5
+BCD[3] => Equal0.IN4
+BCD[3] => Equal1.IN4
+BCD[3] => Equal2.IN4
+BCD[3] => Equal3.IN4
+BCD[3] => Equal4.IN4
+BCD[3] => Equal5.IN4
+BCD[3] => Equal6.IN4
+BCD[3] => Equal7.IN4
+BCD[3] => Equal8.IN4
+BCD[3] => Equal9.IN4
+seg[0] <= <VCC>
+seg[1] <= seg[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg[7] <= seg[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
